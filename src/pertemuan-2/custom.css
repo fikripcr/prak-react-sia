@@ -1,0 +1,93 @@
+/* Styling untuk keseluruhan halaman */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Font terminal retro/sci-fi */
+    background-color: #0b0b1a; /* Latar belakang gelap gulita */
+    /* Menambahkan efek grid holografis tipis di background */
+    background-image: 
+        linear-gradient(rgba(0, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.07) 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container utama */
+.card {
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgba(10, 10, 20, 0.85); /* Agak transparan */
+    padding: 20px;
+    border: 2px solid #00ffff; /* Border cyan neon */
+    border-radius: 0; /* Hilangkan lengkungan, cyberpunk selalu tajam */
+    /* Glow effect berlapis pada kotak */
+    box-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.5), 
+        0 0 20px rgba(0, 255, 255, 0.3), 
+        inset 0 0 15px rgba(0, 255, 255, 0.1);
+    position: relative;
+}
+
+/* Aksen siku tambahan untuk kesan Sci-Fi */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 30px;
+    height: 30px;
+    border-top: 4px solid #ff00ff; /* Magenta neon */
+    border-left: 4px solid #ff00ff;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 30px;
+    height: 30px;
+    border-bottom: 4px solid #ff00ff;
+    border-right: 4px solid #ff00ff;
+}
+
+/* Header utama */
+h1 {
+    color: #ff00ff; /* Magenta neon */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /* Efek cahaya menyala pada teks */
+    text-shadow: 
+        0 0 5px #ff00ff, 
+        0 0 10px #ff00ff, 
+        0 0 20px #ff00ff;
+}
+
+/* Paragraf */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b3fff2; /* Cyan pucat agar tetap bisa dibaca */
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.4);
+}
+
+/* Garis pemisah */
+hr {
+    border: none;
+    height: 2px;
+    background: #fdf317; /* Kuning Cyberpunk (Cyberpunk Yellow) */
+    margin: 15px 0;
+    box-shadow: 0 0 10px #fdf317, 0 0 20px #fdf317;
+}
+
+/* Greeting */
+small {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    color: #39ff14; /* Hijau Matrix/Neon */
+    margin-top: 15px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px #39ff14;
+}
