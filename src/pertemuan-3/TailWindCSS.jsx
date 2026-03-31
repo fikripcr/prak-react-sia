@@ -20,6 +20,7 @@ function ShadowEffects(){
         <div className="bg-white shadow-lg p-6 m-6 rounded-lg hover:shadow-md transition">
             <h3 className="text-xl font-semibold">Hover me!</h3>
             <p className="text-gray-600 mt-2">Lihat efek bayangan saat hover.</p>
+            {/* <FlexboxGrid/> */}
         </div>
     )
 }
