@@ -4,7 +4,6 @@ export default function HitungGajiForm() {
   const [gaji, setgaji] = useState("");
   const pajak = 0.11;
   const totalgaji = gaji - gaji * pajak;
-
   return (
     <div className="flex flex-col items-center justify-center m-5 p-5 bg-gray-100">
       <div className="bg-white p-6 rounded-lg shadow-lg w-96">
