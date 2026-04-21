@@ -2,6 +2,9 @@ import "./assets/tailwind.css";
 import Sidebar from "./layouts/Sidebar";
 import Header from "./layouts/Header";
 import Dashboard from "./pages/Dashboard";
+import { Route, Routes } from "react-router-dom";
+import Orders from "./pages/Orders";
+import Customers from "./pages/Customers";
 
 function App() {
 
@@ -11,7 +14,13 @@ function App() {
             <Sidebar/>
             <div id="main-content" className="flex-1 p-4">
                 <Header/>
-                <Dashboard/>
+
+                {/* <Dashboard/> */}
+                <Routes>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/orders" element={<Orders />} />
+                    <Route path="/customers" element={<Customers />} />
+                </Routes>
             </div>
         </div>
     </div>

@@ -1,6 +1,7 @@
 import { FaUsers } from "react-icons/fa"; 
 import { AiOutlineShoppingCart } from "react-icons/ai"; 
 import { MdDashboard } from "react-icons/md"; 
+import { Link } from "react-router-dom";
 export default function Sidebar() {
     return (
         <div id="sidebar" className="flex min-h-screen w-90 flex-col bg-white p-10 shadow-lg">
@@ -16,14 +17,23 @@ export default function Sidebar() {
             <div id="sidebar-menu" className="mt-10">
                 <ul id="menu-list" className="space-y-3">
                     <li>
-	                    <div id="menu-1" className="hover:text-hijau flex cursor-pointer items-center rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold"><MdDashboard  className="mr-4 text-xl"/>Dashboard</div>
+	                    <Link id="menu-1" to="/" className="hover:text-hijau flex cursor-pointer items-center rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold">
+                            <MdDashboard className="mr-4 text-xl"/>
+                            Dashboard
+                        </Link>
 	                  </li>
                     <li>
-	                    <div id="menu-2" className="hover:text-hijau flex cursor-pointer items-center rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold"><AiOutlineShoppingCart  className="mr-4 text-xl"/>Orders</div>
-	                  </li>
-	                  <li>
-	                    <div id="menu-3" className="hover:text-hijau flex cursor-pointer items-center rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold"><FaUsers  className="mr-4 text-xl"/>Customers</div>
-	                  </li>
+	                    <Link id="menu-2" to="/orders" className="hover:text-hijau flex cursor-pointer items-center rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold">
+                            <AiOutlineShoppingCart className="mr-4 text-xl"/>
+                            Orders
+                        </Link>
+                    </li>
+                    <li>
+                        <Link id="menu-3" to="/customers" className="hover:text-hijau flex cursor-pointer items-center rounded-xl p-4 font-medium text-gray-600 hover:bg-green-200 hover:font-extrabold">
+                            <FaUsers  className="mr-4 text-xl"/>
+                            Customers
+                        </Link>
+                    </li>
                 </ul>
             </div>
 
