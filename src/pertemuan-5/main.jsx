@@ -9,9 +9,9 @@ createRoot(document.getElementById("root"))
         <div>
             <div id="app-container" className="bg-gray-100 min-h-screen flex">
                 <Sidebar/>
-                    <div id="main-content" className="flex-1 p-4">
-                        <Header/>
-                        <Dashboard/>
+                <div id="main-content" className="flex-1 p-4">
+                    <Header/>
+                    <Dashboard/>
                 </div>
             </div>
         </div>
