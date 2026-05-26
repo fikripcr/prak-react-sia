@@ -76,6 +76,16 @@ export default function Sidebar() {
               Products
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              id="menu-3"
+              to="/fitur-xyz"
+              className={menuClass}
+            >
+              <AiOutlineCodeSandbox className="mr-4 text-xl" />
+              Fitur XYZ
+            </NavLink>
+          </li>
         </ul>
       </div>
 

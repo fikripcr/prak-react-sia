@@ -18,6 +18,8 @@ function App() {
   const MainLayout = React.lazy(() => import("./layouts/MainLayout"));
   const AuthLayout = React.lazy(() => import("./layouts/AuthLayout"));
 
+  const FiturXyz = React.lazy(() => import("./pages/FiturXyz"));
+
   return (
     <Suspense fallback={<Loading />}>
       <Routes>
@@ -29,6 +31,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} /> 
           <Route path="/customers/:id" element={<CustomerDetail />} /> 
+          <Route path="/fitur-xyz" element={<FiturXyz />} /> 
         </Route>
 
         <Route element={<AuthLayout />}>
