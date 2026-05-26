@@ -53,7 +53,7 @@ export default function Sidebar() {
               to="/orders"
               className={menuClass}>
               <AiOutlineShoppingCart className="mr-4 text-xl" />
-              Orders
+              Order
             </NavLink>
           </li>
           <li>
@@ -63,7 +63,7 @@ export default function Sidebar() {
               className={menuClass}
             >
               <FaUsers className="mr-4 text-xl" />
-              Customers
+              Customer
             </NavLink>
           </li>
           <li>
@@ -73,7 +73,7 @@ export default function Sidebar() {
               className={menuClass}
             >
               <AiOutlineCodeSandbox className="mr-4 text-xl" />
-              Products
+              Product
             </NavLink>
           </li>
         </ul>
