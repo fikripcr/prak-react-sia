@@ -69,11 +69,21 @@ export default function Sidebar() {
           <li>
             <NavLink
               id="menu-3"
-              to="/products"
+              to="/product"
               className={menuClass}
             >
               <AiOutlineCodeSandbox className="mr-4 text-xl" />
               Product
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              id="menu-3"
+              to="/fitur-xyz"
+              className={menuClass}
+            >
+              <AiOutlineCodeSandbox className="mr-4 text-xl" />
+              Fitur Xyz
             </NavLink>
           </li>
         </ul>
