@@ -1,3 +1,4 @@
+import { BiNote } from "react-icons/bi"; 
 import { AiOutlineCodeSandbox } from "react-icons/ai"; 
 import { FaUsers } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -78,12 +79,22 @@ export default function Sidebar() {
           </li>
           <li>
             <NavLink
-              id="menu-3"
+              id="menu-4"
               to="/fitur-xyz"
               className={menuClass}
             >
               <AiOutlineCodeSandbox className="mr-4 text-xl" />
               Fitur Xyz
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              id="menu-5"
+              to="/notes"
+              className={menuClass}
+            >
+              <BiNote  className="mr-4 text-xl" />
+              Notes
             </NavLink>
           </li>
         </ul>

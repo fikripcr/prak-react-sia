@@ -3,6 +3,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Loading from "./components/Loading";
 import { Suspense } from "react";
+import Note from "./pages/Note";
 
 function App() {
   const Dashboard = React.lazy(() => import("./pages/Dashboard"));
@@ -32,6 +33,7 @@ function App() {
           <Route path="/products/:id" element={<ProductDetail />} /> 
           <Route path="/customers/:id" element={<CustomerDetail />} /> 
           <Route path="/fitur-xyz" element={<FiturXyz />} /> 
+          <Route path="/notes" element={<Note/>}/>
         </Route>
 
         <Route element={<AuthLayout />}>
